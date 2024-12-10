@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi Sistemi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>Ekolojik Kredi Sistemi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#nedir">Ekolojik Kredi Nedir?</a></li>
+                    <li><a href="#geri-donusum">Geri Dönüşüm Nedir?</a></li>
+                    <li><a href="#iletisim">Bize Ulaşın</a></li>
+                    <li><a href="#hazirlayanlar">Hazırlayanlar</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="right-side">
+            <div id="okulKaydi" class="section">
+                <h2>Okul Kaydı</h2>
+                <form id="school-form">
+                    <label for="province">İl:</label>
+                    <input type="text" id="province" name="province">
+                    
+                    <label for="district">İlçe:</label>
+                    <input type="text" id="district" name="district">
+                    
+                    <label for="school-name">Okul Adı:</label>
+                    <input type="text" id="school-name" name="school-name">
+                    
+                    <label for="school-password">Şifre:</label>
+                    <input type="password" id="school-password" name="school-password">
+                    
+                    <button type="submit">Okul Kaydını Yap</button>
+                </form>
+            </div>
+
+            <div id="ogrenciKaydi" class="section">
+                <h2>Öğrenci Kaydı</h2>
+                <form id="student-form">
+                    <label for="student-name">Ad:</label>
+                    <input type="text" id="student-name" name="student-name">
+                    
+                    <label for="student-surname">Soyad:</label>
+                    <input type="text" id="student-surname" name="student-surname">
+                    
+                    <label for="student-email">E-Posta:</label>
+                    <input type="email" id="student-email" name="student-email">
+                    
+                    <label for="student-phone">Telefon:</label>
+                    <input type="text" id="student-phone" name="student-phone">
+                    
+                    <label for="student-school">Okul:</label>
+                    <input type="text" id="student-school" name="student-school">
+                    
+                    <button type="submit">Öğrenci Kaydını Yap</button>
+                </form>
+            </div>
+
+            <div id="veriGiris" class="section">
+                <h2>Veri Girişi</h2>
+                <form id="waste-form">
+                    <label for="waste-type">Atık Türü:</label>
+                    <select id="waste-type" name="waste-type">
+                        <option value="plastik">Plastik</option>
+                        <option value="kağıt">Kağıt</option>
+                        <option value="pil">Pil</option>
+                        <option value="elektronik">Elektronik</option>
+                        <option value="cam">Cam</option>
+                        <option value="yağ">Yağ</option>
+                        <option value="tekstil">Tekstil</option>
+                    </select>
+                    
+                    <label for="waste-weight">Atık Kilosu (kg):</label>
+                    <input type="number" id="waste-weight" name="waste-weight" min="0" step="0.1">
+                    
+                    <label for="recorded-by">Kaydeden Kişi:</label>
+                    <input type="text" id="recorded-by" name="recorded-by">
+                    
+                    <label for="sorted">Atık Ayrıştırıldı Mı?</label>
+                    <select id="sorted" name="sorted">
+                        <option value="evet">Evet</option>
+                        <option value="hayir">Hayır</option>
+                    </select>
+
+                    <button type="submit">Veri Kaydet</button>
+                </form>
+            </div>
+
+            <div id="ogrenciVeriGoruntule" class="section">
+                <h2>Öğrenci Verileri</h2>
+                <div id="student-data">
+                    <p>Toplam Atık Puanı: <span id="total-points">0</span></p>
+                    <p>Unvan: <span id="title">Başlangıç</span></p>
+                    <p>Mevcut Puan: <span id="remaining-points">300</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+  </html>
